@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teatro Finestra - Compagnia Teatrale di Aprilia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Teatro Finestra</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#chi-siamo">Chi Siamo</a></li>
+                <li><a href="#galleria">Galleria</a></li>
+                <li><a href="#calendario">Eventi</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Benvenuti al Teatro Finestra</h2>
+        <p>Il teatro più bello del mondo</p>
+    </section>
+
+    <section id="chi-siamo">
+        <h2>Chi Siamo</h2>
+        <p>Il Teatro Finestra nasce ad Aprilia nel ecc ecc...</p>
+    </section>
+
+    <section id="galleria">
+        <h2>Galleria</h2>
+        <div class="gallery">
+            <img src="spettacolo1.jpg" alt="Spettacolo 1">
+            <img src="spettacolo2.jpg" alt="Spettacolo 2">
+            <img src="spettacolo3.jpg" alt="Spettacolo 3">
+            <!-- Aggiungere altre immagini qui -->
+        </div>
+    </section>
+
+    <section id="calendario">
+        <h2>Eventi Futuri</h2>
+        <div id="calendar"></div>
+        <ul id="eventi-list">
+            <li>12 Ottobre 2024 - Il mercante di Venezia - Ore 20:30</li>
+            <li>25 Novembre 2024 - Sogno di una notte di mezza estate - Ore 21:00</li>
+        </ul>
+    </section>
+
+    <section id="contatti">
+        <h2>Contatti</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Messaggio:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Invia</button>
+        </form>
+        <p>Email: finestra.teatro@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Teatro Finestra, Aprilia</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
