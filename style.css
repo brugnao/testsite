@@ -1,25 +1,32 @@
+/* Imposta colori e font */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fff; /* Colore di sfondo bianco */
+    color: #000; /* Testo nero */
 }
 
+/* Stile per l'intestazione */
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    background-color: #000; /* Sfondo nero */
+    color: #fff; /* Testo bianco */
+    padding: 20px 0;
     text-align: center;
+    border-bottom: 4px solid #cc0000; /* Sottolineatura rossa */
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5em;
 }
 
+/* Navigazione del menu */
 nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
+    margin-top: 10px;
 }
 
 nav ul li {
@@ -28,39 +35,69 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #fff; /* Testo bianco per il menu */
     text-decoration: none;
+    font-size: 1.2em;
 }
 
+nav ul li a:hover {
+    color: #cc0000; /* Testo rosso al passaggio del mouse */
+}
+
+/* Sezioni del sito */
 section {
-    padding: 20px;
+    padding: 40px;
     margin: 20px 0;
-    background-color: white;
+    background-color: #f4f4f4; /* Grigio chiaro per risaltare il contenuto */
     border-radius: 5px;
+    border-left: 5px solid #cc0000; /* Bordo rosso sul lato sinistro */
 }
 
 #home {
+    background-color: #fff; /* Sfondo bianco per la home */
+    color: #000; /* Testo nero */
     text-align: center;
 }
 
+/* Sezione Chi Siamo */
 #chi-siamo {
-    background-color: #eee;
+    background-color: #fff; /* Sfondo bianco */
+    color: #000; /* Testo nero */
 }
 
+/* Galleria di immagini */
 .gallery {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .gallery img {
     width: 30%;
     border-radius: 5px;
+    border: 3px solid #cc0000; /* Bordo rosso intorno alle immagini */
+    margin: 10px;
+    transition: transform 0.3s;
 }
 
+.gallery img:hover {
+    transform: scale(1.05); /* Effetto di zoom al passaggio del mouse */
+}
+
+/* Sezione Calendario */
 #calendario {
     text-align: center;
+    background-color: #fff; /* Sfondo bianco */
+    color: #000; /* Testo nero */
 }
 
+#eventi-list li {
+    margin: 10px 0;
+    color: #cc0000; /* Colore rosso per gli eventi */
+    font-weight: bold;
+}
+
+/* Sezione Contatti */
 #contatti form {
     display: flex;
     flex-direction: column;
@@ -68,15 +105,38 @@ section {
     margin: auto;
 }
 
-#contatti form label, input, textarea, button {
-    margin: 10px 0;
+#contatti form label {
+    margin: 10px 0 5px;
 }
 
+#contatti form input, #contatti form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #cc0000; /* Bordo rosso */
+    border-radius: 5px;
+}
+
+#contatti form button {
+    padding: 10px;
+    background-color: #cc0000; /* Pulsante rosso */
+    color: #fff; /* Testo bianco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+#contatti form button:hover {
+    background-color: #b30000; /* Scuro al passaggio del mouse */
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+    padding: 15px;
+    background-color: #000; /* Sfondo nero */
+    color: #fff; /* Testo bianco */
+    border-top: 4px solid #cc0000; /* Bordo superiore rosso */
     position: fixed;
     width: 100%;
     bottom: 0;
