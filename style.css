@@ -133,10 +133,10 @@ section {
 /* Footer */
 footer {
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     background-color: #000; /* Sfondo nero */
     color: #fff; /* Testo bianco */
-    border-top: 4px solid #cc0000; /* Bordo superiore rosso */
+    border-top: 6px solid #cc0000; /* Bordo superiore rosso */
     position: fixed;
     width: 100%;
     bottom: 0;
