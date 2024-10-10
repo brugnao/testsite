@@ -138,6 +138,6 @@ footer {
     color: #fff; /* Testo bianco */
     border-top: 6px solid #cc0000; /* Bordo superiore rosso */
     position: fixed;
-    width: 100%;
+    width: 80%;
     bottom: 0;
 }
