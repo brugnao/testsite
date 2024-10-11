@@ -14,7 +14,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     };
 
     // Invio dell'email con EmailJS
-    emailjs.send(Gmail_API,__ejs-test-mail-service__, templateParams)
+    emailjs.send(Gmail_API,template_o894elp, templateParams)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             document.getElementById('success-message').style.display = 'block'; // Mostra messaggio di successo
