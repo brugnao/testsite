@@ -1,6 +1,6 @@
 // Inizializza EmailJS con il tuo USER ID
 (function(){
-    emailjs.init("IL_TUO_USER_ID"); // Sostituisci con il tuo USER ID da EmailJS
+    emailjs.init(service_wg538x8); // Sostituisci con il tuo USER ID da EmailJS
 })();
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
