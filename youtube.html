@@ -8,18 +8,25 @@
 
             
 
-            .thumbnail{
-                width: 500px;
+            .thumbnail-1,
+            .thumbnail-2{
+                width: 300px;
+                display: block;
+            }
+
+            .thumbnail-2{
+                height: 168.33px;
             }
 
             .search{
+                display: block;
                 background-color: #f9f9f9;
-                font-size: 40px;
+                font-size: 14px;
                 border-width: 2px;
                 border-style: solid;
-                border: none;
+                border:black
                 border-radius: 6px;
-                margin-left: 6px;
+                margin-bottom: 2px;
                 margin-top: 10px;
                 
             }
@@ -27,12 +34,60 @@
             .search:hover{
             box-shadow: 12px 12px 20px 3px rgba(0, 0, 0, 0.4), -2px -4px 15px #4d0505; 
             }
+
+            .video-title,{
+                width: 300px;
+            }
+
+            .video-preview{
+                display: inline-block;
+                width: 300px;
+                vertical-align: top;
+                margin-right: 15px;
+            }
+
+            .prof1{
+                width: 50px;
+            }
+
+            .channel-pic{
+                display: inline-block;
+                width: 50px;
+            }
+            .video-info{
+                display: inline-block;
+            }
+            
         </style>
+
+
     </head>
 
-    <body style="background-color: #4d0505;">
-        <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+    <body style="background-color: white;">
         <input class="search" type="text" placeholder="Search">
+
+        <div class="video-preview">
+            <div>
+                <img class="thumbnail-1" src="thumbnails/thumbnail-1.webp">                      
+            </div>
+            <div>
+                <div class="channel-pic">
+                    <img class="prof1" src="profile/prof1.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Talking Tech with CEO</p>
+                    <p class="video-author">Marq</p>
+                    <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                </div>
+            </div>           
+        </div>
+
+        <div class="video-preview">
+            <img class="thumbnail-2" src="thumbnails/coastal-wash-web.webp">
+            <p class="video-title">Horizon and mountain</p>
+            <p class="video-author">Markliplier</p>
+            <p class="video-stats">1.2M views &#183; 2 months ago</p>
+        </div>
 
     </body>
 
