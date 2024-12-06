@@ -3,14 +3,22 @@
 <html>
 
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+        
         <title>Youtube Clone</title>
         <style>
 
-            
+            p{
+                font-family: Roboto, Arial;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
 
             .thumbnail-1,
             .thumbnail-2{
-                width: 300px;;
+                width: 300px;
                 display: block;
             }
 
@@ -24,8 +32,7 @@
                 font-size: 14px;
                 border-width: 2px;
                 border-style: solid;
-                border:black
-                border-radius: 6px;
+                border:black;
                 margin-bottom: 2px;
                 margin-top: 10px;
                 
@@ -35,8 +42,17 @@
             box-shadow: 12px 12px 20px 3px rgba(0, 0, 0, 0.4), -2px -4px 15px #4d0505; 
             }
 
-            .video-title,{
-                width: 300px;
+            .search:active{
+                
+            }
+
+            .video-title{
+                width: 200px;
+                margin-top: 0px;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                margin-bottom:12px ;
             }
 
             .video-preview{
@@ -46,18 +62,37 @@
                 margin-right: 15px;
             }
 
-            .prof1{
+            .profile-image{
                 width: 50px;
+                height: 50px;
+                border-radius: 40px;
             }
 
             .channel-pic{
                 display: inline-block;
                 width: 50px;
+                display: inline-block;
+                vertical-align: top;
             }
             .video-info{
                 display: inline-block;
+                width: 100px;
             }
-            
+
+            .thumbnail-row{
+                margin-bottom: 12px;
+            }
+
+            .video-author,
+            .video-stats{
+                font-size: 12px;
+                color: rgb(96,96,96);
+                width: 200px;
+            }
+
+            .video-author{
+                margin-bottom: 4px;
+            }
         </style>
 
 
@@ -67,27 +102,38 @@
         <input class="search" type="text" placeholder="Search">
 
         <div class="video-preview">
-            <div>
+            <div class="thumbnail-row"> 
                 <img class="thumbnail-1" src="thumbnails/thumbnail-1.webp">                      
             </div>
             <div>
                 <div class="channel-pic">
-                    <img class="prof1" src="profile/prof1.jpg">
+                    <img class="profile-image" src="profile/prof1.jpg">
                 </div>
                 <div class="video-info">
-                    <p class="video-title">Talking Tech with CEO</p>
-                    <p class="video-author">Marq</p>
+                    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    <p class="video-author">Marque Browniee</p>
                     <p class="video-stats">3.4M views &#183; 6 months ago</p>
                 </div>
             </div>           
         </div>
 
+
         <div class="video-preview">
-            <img class="thumbnail-2" src="thumbnails/coastal-wash-web.webp">
-            <p class="video-title">Horizon and mountain</p>
-            <p class="video-author">Markliplier</p>
-            <p class="video-stats">1.2M views &#183; 2 months ago</p>
+            <div class="thumbnail-row"> 
+                <img class="thumbnail-1" src="thumbnails/coastal-wash-web.webp">                      
+            </div>
+            <div>
+                <div class="channel-pic">
+                    <img class="profile-image" src="profile/flower.jpg" style="object">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Horizon and Mountain</p>
+                    <p class="video-author">John Wayne</p>
+                    <p class="video-stats">173k views &#183; 2 months ago</p>
+                </div>
+            </div>           
         </div>
+
 
     </body>
 
